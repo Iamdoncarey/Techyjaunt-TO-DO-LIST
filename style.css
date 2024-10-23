@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .task-app {
+    width: 400px;
+    margin: 5rem auto;
+    background: rgb(216, 173, 173);
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  #task-input{
+    border-radius: 5px;
+    border: none;
+  }
+
+  #add-task-btn{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  input {
+    width: 75%;
+    padding: 7px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .task-filter .filter-btn{
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+  }
+  
+  .filter-btn {
+    margin-right: 10px;
+  }
+  
+  
+
+  /* General task list styles */
+ul#task-list {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+  }
+  
+  li.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Style for completed tasks */
+  li.task-item.completed span {
+    text-decoration: line-through; /* Strike-through for completed tasks */
+    color: #888; /* Grey out the text for completed tasks */
+    font-style: italic;
+  }
+  
+  /* Button styles */
+  button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  /* Complete button (initial state) */
+  button.toggle-complete {
+    background-color: #28a745; /* Green color for complete button */
+    color: white;
+  }
+  
+  button.toggle-complete:hover {
+    background-color: #218838;
+  }
+  
+  /* Undo button (when task is completed) */
+  li.completed button.toggle-complete {
+    background-color: #ffc107; /* Yellow color for undo button */
+    color: white;
+  }
+  
+  li.completed button.toggle-complete:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Delete button */
+  button.delete-task {
+    background-color: #dc3545; /* Red color for delete button */
+    color: white;
+  }
+  
+  button.delete-task:hover {
+    background-color: #c82333;
+  }
+  
